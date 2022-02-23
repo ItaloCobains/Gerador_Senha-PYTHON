@@ -4,7 +4,7 @@ import random;
 import string;
 
 
-## Uma pergunta no Terminal.
+## Inpunt
 length = int(input("\nDigite o tamanho da senha:"))
 
 ## Dados.

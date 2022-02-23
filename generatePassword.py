@@ -14,8 +14,9 @@ toUpper = string.ascii_uppercase
 numbers = string.digits
 symbols = string.punctuation
 
-## Juntando os dados.
+## Juntando/Combinando os dados.
 all = toLower + toUpper + numbers + symbols
+## print(all)
 
 ## Random
 temp = random.sample(all, length)

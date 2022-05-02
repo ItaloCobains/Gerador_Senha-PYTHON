@@ -1,25 +1,9 @@
-## Importações
+import random, string
 
-import random;
-##import string;
+tamanho = 16
 
+chars = string.ascii_letters + string.digits + '!@#$%&*()_-+=´`?/:;,.\|/'
 
-## Inpunt
-length = int(input("\nDigite o tamanho da senha:"))
+rnd = random.SystemRandom()
 
-## Dados.
-
-toLower = "abcdefghijklmnopqrstuvwxyzç" ## Ou string.ascii_lowercase
-toUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZÇ" ## Ou string.ascii_uppercase
-numbers = "0123456789" ## Ou string.digits
-symbols = '!"' + "#$%&'()*+,-./:;<=>?@[\]^_`{|}~|" ## Ou string.punctuation
-
-## Juntando/Combinando os dados.
-all = toLower + toUpper + numbers + symbols
-## print(all)
-
-## Criando a senha.
-password = "".join(random.sample(all, length))
-
-## Terminal.
-print(password)
+print(''.join(rnd.choice(chars) for i in range(tamanho)))
